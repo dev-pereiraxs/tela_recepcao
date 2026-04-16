@@ -48,7 +48,7 @@ def salvar():
         (primeiro_nome, sobrenome, tipo_usuario, data_nascimento) 
         VALUES (%s, %s, %s, %s)
     """
-    valores = (primeiro_nome, sobrenome, email, celular, tipo_usuario, data_nascimento)
+    valores = (primeiro_nome, sobrenome, tipo_usuario, data_nascimento)
 
     cursor.execute(sql, valores)
     conn.commit()
